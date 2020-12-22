@@ -1397,7 +1397,6 @@ button.fas.fa-search.btn {
     background: -moz-linear-gradient(-99deg,#06c274,#07ba5b);
 	
  */
-	
 }
  
 .jobs .textjobs{
@@ -3229,7 +3228,7 @@ box-shadow: 0 5px 16px 0 rgba(var(--brand-primary-rgb), .5)
 }
 
 .timeLineContainer .scrollBtns {
-	margin: 20px 0;
+	margin: 0 0 20px;
 }
 
 .timeLineContainer .scrollBtns button {
@@ -3372,32 +3371,8 @@ box-shadow: 0 5px 16px 0 rgba(var(--brand-primary-rgb), .5)
 	}
 }
 @media (max-width:991px) {
-	/* .totalTimeLine {
-		overflow-x: scroll;
-		padding-bottom: 50px;
-	} */
-
-	/* width of the scrollBar */
-	/* .totalTimeLine::-webkit-scrollbar {
-		width: 10px;
-		height: 5px;
-	} */
-
-	/* Track of the scrollBar */
-	/* .totalTimeLine::-webkit-scrollbar-track {
-		box-shadow: inset 0 0 5px rgb(73, 172, 16);
-		border-radius: 10px;
-	} */
-
-	/* Handle of the scrollBar */
-	/* .totalTimeLine::-webkit-scrollbar-thumb {
-		background: #008F42;
-		border-radius: 10px;
-	} */
-
 	.timeLineContainer .scrollBtns {
 		margin-top: 0px;
-		margin: 20px 0;
 	}
 	
 	.timeLineContainer .scrollBtns #left_scroll {
@@ -3417,6 +3392,17 @@ box-shadow: 0 5px 16px 0 rgba(var(--brand-primary-rgb), .5)
 	.text-wrap p {
 		font-size: 20px;
 		line-height: 25px;
+	}
+
+	.totalTimeLine {
+		overflow-x: scroll;
+		padding-bottom: 30px;
+	}
+
+	/* width of the scrollBar */
+	.totalTimeLine::-webkit-scrollbar {
+		width: 0px;
+		height: 0px;
 	}
 }
 @media (max-width:767px){
@@ -3439,9 +3425,13 @@ box-shadow: 0 5px 16px 0 rgba(var(--brand-primary-rgb), .5)
 		width: 25px; 
 	}
 	
-	/* .innerhistory:before, .innerhistory:after, .his-inner:after {
-		display: none;
-	}  */
+	.history .headtitle {
+		padding: 20px 0 40px 0;
+	}
+
+	.timeLineContainer .scrollBtns {
+		margin-top: 0px;
+	}
 }
 @media (max-width:450px){
     .fontsig {
